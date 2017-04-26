@@ -1,0 +1,28 @@
+.departement header #slider{
+    height: 500px !important;
+}
+.departement #slider li{
+    position: relative !important;
+    overflow: hidden;
+}
+.departement #slider .desc{
+    top: 15%;
+    width: 100% !important;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 auto;
+    left: 0 !important;
+    display: block;
+}
+.departement #slider .desc p{
+    width: 60%;
+    margin: 0 auto;
+}
+.slick-prev{
+    left: 0% !important;
+    top: 50% !important;
+}
+.slick-next{
+    left:97% !important;
+    top: 50% !important;
+}
