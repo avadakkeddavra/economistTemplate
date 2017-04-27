@@ -150,21 +150,36 @@ div > p{
     visibility: visible;
 }
 header .menu-row{
-    padding: 20px;
+    line-height: 80px;
 }
 header .menu{
     margin-bottom: 0 !important;
 }
 header .menu li{
     display: inline-block;
-    margin-left: 20px;
 }
 header .menu  li a{
-    font-size: 18px;
-    text-transform: capitalize;
+    font-size: 14px;
+    padding: 0px 10px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
     text-decoration: none;
-    font-weight: lighter;
-    color: #333333;
+    color: #555555;
+    position: relative;
+}
+header .menu  li a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background-color: #fd5308;
+    transition: 0.3s;
+}
+header .menu  li a:hover:after{
+    width: 100%;
 }
 .slider-container{
     position: relative;

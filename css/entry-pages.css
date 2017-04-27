@@ -1,0 +1,69 @@
+header{
+    height: 300px;
+    background: url(../img/slide3.jpg) center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+header .bg-overlay{
+    background-color: rgba(0, 40, 88, 0.6);
+}
+.menu-row{
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+header .site-title{
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+}
+header .site-title h1{
+    font-weight: bold;
+    font-size: 45px;
+}
+.entry-content .container{
+    box-shadow: 5px 5px 15px 2px #c3c3c3
+}
+.entry-content img{
+    margin-bottom: 20px;
+}
+.entry-content .desc h1, .entry-content .desc h2,.entry-content .desc h3,.entry-content .desc h4,.entry-content .desc h5 {
+    font-size: 16px;
+    font-family: inherit!important;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #383838;
+}
+.entry-content .desc p, .entry-content .desc p >span, .entry-content .desc span, .entry-content .desc ul li
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+}
+.entry-content .desc ul, .entry-content .desc ol{
+    padding:10px 20px;
+}
+/*news page*/
+.publish-info{
+    padding-bottom: 5px;
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid #dedede;
+}
+.publish-info span{
+    margin-right: 10px;
+    color: #fd5308;
+}
+.publish-info span i{
+    font-size: 16px;
+    margin-right: 5px;
+    color: #fd5308;
+}
+.publish-info .author{
+    
+}
+/*teacher page*/
+.about-teacher{
+    padding: 20px !important;
+    box-shadow: 5px 5px 15px 2px #c3c3c3;
+}
