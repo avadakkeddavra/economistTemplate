@@ -5,7 +5,7 @@ class Loader
 	public  function loadClass($class_name)
 	{
 		$arr = explode('\\', $class_name);
-		print_r($arr);
+		
 		$prefix = array_shift($arr);
 
 

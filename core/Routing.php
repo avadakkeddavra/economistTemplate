@@ -18,12 +18,10 @@ class Routing
 		{
 			$actionName = $piecesOfUrl[3];
 		}
-
-		$modelName = 'models\\' . $controllerName . 'Model';
+		
 		$controller =  'controllers\\' . $controllerName . 'Controller';
 		$actionName = $actionName .'Action' ;
 		
-		$model = new $modelName();
 		$controller = new $controller($controllerName);
 		$controller -> $actionName();		
 
