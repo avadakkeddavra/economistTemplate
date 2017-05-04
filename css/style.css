@@ -149,6 +149,28 @@ div > p{
     opacity: 1;
     visibility: visible;
 }
+/*SORT*/
+.nav-sort ul{
+    text-align: center;
+    list-style: none;
+    margin-bottom: 50px;
+}
+.nav-sort ul li{
+    display: inline-block;
+}
+.nav-sort ul li a{
+    display: block;
+    padding: 10px 30px;
+    background-color: #fd5308;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid #fff;
+}
+.nav-sort ul li a:hover{
+    background-color: transparent;
+    border-bottom: 3px solid ;
+    color: #fd5308;
+}
 header .menu-row{
     line-height: 80px;
 }
@@ -161,6 +183,7 @@ header .menu li{
 header .menu  li a{
     font-size: 14px;
     padding: 0px 20px;
+    text-align: center;
     display: block;
     text-transform: uppercase;
     font-weight: bold;
