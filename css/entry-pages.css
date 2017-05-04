@@ -10,8 +10,11 @@ header .link-pannel{
 }
 header .link-pannel a{
     color: #fff;
-    margin-right: 20px;
+    margin-right: 10px;
     text-decoration: underline;
+}
+header .link-pannel a i{
+    margin-left: 15px;
 }
 header .bg-overlay{
     background-color: rgba(0, 40, 88, 0.6);
