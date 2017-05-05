@@ -27,7 +27,7 @@
                        <li><a href="#">Студентам</a></li>
                    </ul>
                 </li>
-               <li class="dropdown-item"><a href="#">наука</a>
+               <li class="dropdown-item"><a href="/academy/departement/">наука</a>
                </li>
                <li class="dropdown-item"><a href="news/">Новости</a>
                <i class="fa fa-angle-down"></i>
@@ -166,8 +166,21 @@
     <section class='departments container'>
        <h3 class="h-block">Кафедры факультета <i class="fa fa-heart-o"></i></h3>
         <div class="row">
-            <div class="col-md-4 col-sm-6 department">
-                <h3 class="h-desc"><a href="#" class="h-link">Экономики предприятия</a></h3>
+
+        <?php 
+        foreach($data['departements'] as $item)
+        {
+            echo '
+                <div class="col-md-4 col-sm-6 department">
+                    <h3 class="h-desc"><a href="' . TEMPLATE_PATH . 'departements/' . $item['id'] . '" class="h-link">' . $item['title'] . '</a></h3>
+                    <p>' . $item['description'] . '</p>
+                </div>
+            ';
+        }
+
+         ?>
+         <!--    <div class="col-md-4 col-sm-6 department">
+                <h3 class="h-desc"><a href="#" class="h-link"></a></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cumque, fugiat velit quo pariatur non rerum ratione nulla ea nobis alias ipsa? Repellendus non saepe unde, in expedita rerum dolorem.</p>
             </div>
             <div class="col-md-4 col-sm-6 department">
@@ -189,12 +202,12 @@
             <div class="col-md-4 col-sm-6 department">
                 <h3 class="h-desc"><a href="#" class="h-link">экономики управления</a></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis cumque, fugiat velit quo pariatur non rerum ratione nulla ea nobis alias ipsa? Repellendus non saepe unde, in expedita rerum dolorem.</p>
-            </div>
+            </div> -->
         </div>
     </section>
     
     
-    <section class="container for-students">
+ <!--    <section class="container for-students">
         <h2 class="h-block">для студентов</h2>
         <div class="row">
             <div class="col-md-4 col-sm-6">
@@ -216,7 +229,7 @@
                 <a href="#" class="btn-standart">Подробнее</a>
             </div>
         </div>
-    </section>
+    </section> -->
     
     <section class="container teachers">
         <h2 class="h-block">преподаватели</h2>
